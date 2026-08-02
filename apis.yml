@@ -1,8 +1,31 @@
 aid: tanaza
 name: Tanaza
-description: Tanaza is a company surfaced as a portfolio company of seedcamp and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Tanaza is a hardware-agnostic, cloud-based Wi-Fi management platform,
+  headquartered in Milan, Italy, that lets managed service providers, system
+  integrators, and businesses configure, monitor, and operate Wi-Fi access
+  points, SSIDs, and networks from a single dashboard. Alongside its cloud
+  management platform, Tanaza operates Classic Hotspot, a guest-Wi-Fi /
+  captive-portal product with social login, paid Wi-Fi vouchers, splash-page
+  editing, and analytics. Tanaza exposes three API families — a Network
+  Management API, a Network Monitoring API, and an Application API — that give
+  developers programmatic access to the Tanaza Cloud dashboard data set
+  (networks, access points, MAC addresses, active SSIDs, connected clients, and
+  signal strength in dBm), plus a Push Contact Notifications webhook feature that
+  delivers event notifications to a customer-hosted endpoint over HTTP POST.
 url: https://raw.githubusercontent.com/api-evangelist/tanaza/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.tanaza.com/wp-content/uploads/2020/03/hito-tanaza-logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,10 +34,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- WiFi
+- Networking
+- Cloud Management
+- Access Points
+- Hotspot
+- Captive Portal
+- Monitoring
+- Managed Service Provider
+- Telecommunications
+apis:
+- name: Tanaza Cloud API
+  description: >-
+    Programmatic access to the Tanaza Cloud dashboard data set across three
+    documented API families — Network Management, Network Monitoring, and
+    Application — plus Push Contact Notifications webhooks. Read networks and
+    access points (label, MAC address, SSIDs, last-packet timestamp, status),
+    active SSIDs, connected clients, and signal strength (dBm).
+  humanURL: https://success.tanaza.com/s/article/Tanaza-APIs-Overview
+  tags:
+  - WiFi
+  - Monitoring
+  - Networking
+  properties:
+  - type: Documentation
+    url: https://success.tanaza.com/s/article/Tanaza-APIs-Overview
+  - type: Webhooks
+    url: asyncapi/tanaza-push-notifications-webhooks.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -22,4 +71,35 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://tanaza.com
+  url: https://www.tanaza.com/
+- type: DeveloperPortal
+  url: https://app.tanaza.com/
+- type: Documentation
+  url: https://success.tanaza.com/s/article/Tanaza-APIs-Overview
+- type: APIReference
+  url: https://success.tanaza.com/s/article/Network-Status-APIs
+- type: Support
+  url: https://support.tanaza.com/
+- type: Blog
+  url: https://www.tanaza.com/blog
+- type: Pricing
+  url: https://www.tanaza.com/tanaza-pricing-plans/
+- type: SignUp
+  url: https://app.tanaza.com/
+- type: TermsOfService
+  url: https://www.tanaza.com/legal/
+- type: PrivacyPolicy
+  url: https://www.tanaza.com/legal/privacy/
+- type: GitHubOrganization
+  url: https://github.com/tanaza
+- type: Webhooks
+  url: asyncapi/tanaza-push-notifications-webhooks.yml
+- type: DomainSecurity
+  url: security/tanaza-domain-security.yml
+- type: LLMsTxt
+  url: llms/tanaza-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1

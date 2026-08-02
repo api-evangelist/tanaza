@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.classichotspot.com/classic-hotspot-features/tanaza-api/
+spec_type: Webhooks
+name: Tanaza Push Contact Notifications
+summary: >-
+  Tanaza Push Contact Notifications is a customer-facing webhook feature. The
+  customer exposes a public HTTP endpoint and the Tanaza infrastructure delivers
+  event notification messages to it as HTTP POST requests. This captures the
+  documented webhook surface; Tanaza does not publish a machine-readable AsyncAPI
+  document, so no verbatim spec is saved (none fabricated).
+delivery:
+  transport: http
+  method: POST
+  direction: tanaza-to-customer
+  endpoint: customer-hosted public URL (configured by the customer)
+  status: pre-released feature (per provider docs)
+events:
+  - name: contact-notification
+    description: >-
+      Notification message delivered when a tracked event occurs, carrying
+      information about the event (e.g. guest/contact and network activity from
+      the Tanaza Cloud / Classic Hotspot data set). Exact payload schema is not
+      publicly documented in a machine-readable form.
+docs:
+  - https://success.tanaza.com/s/article/Push-notifications
+  - https://www.classichotspot.com/classic-hotspot-features/tanaza-api/
+notes: >-
+  The detailed payload schema lives behind Tanaza's authenticated Success/Support
+  community (success.tanaza.com, JS-gated, returns 503 to non-browser clients),
+  so field-level structure is not captured here rather than fabricated.
