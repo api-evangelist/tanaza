@@ -37,6 +37,17 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
+- Wi-Fi
+- Networking
+- Cloud Management
+- Access Points
+- Hotspot
+- Captive Portal
+- Monitoring
+- Managed Service Provider
+- Telecommunications
+tags_raw:
+- Company
 - WiFi
 - Networking
 - Cloud Management
@@ -56,6 +67,10 @@ apis:
     active SSIDs, connected clients, and signal strength (dBm).
   humanURL: https://success.tanaza.com/s/article/Tanaza-APIs-Overview
   tags:
+  - Wi-Fi
+  - Monitoring
+  - Networking
+  tags_raw:
   - WiFi
   - Monitoring
   - Networking
