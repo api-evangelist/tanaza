@@ -48,7 +48,7 @@ created: '2026-07-17'
 modified: '2026-07-21'
 tags:
 - Company
-- WiFi
+- Wi-Fi
 - Networking
 - Cloud Management
 - Access Points
@@ -78,7 +78,7 @@ apis:
     active SSIDs, connected clients, and signal strength (dBm).
   humanURL: https://success.tanaza.com/s/article/Tanaza-APIs-Overview
   tags:
-  - WiFi
+  - Wi-Fi
   - Monitoring
   - Networking
   tags_raw:
